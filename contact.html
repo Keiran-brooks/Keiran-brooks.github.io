@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
-        <title id="type">Projects</title>
-        <meta content="keiran.club" property="og:title" />
-        <meta content="My project page" property="og:description" />
+        <title id="type">Contact</title>
+        <meta content="Contacts" property="og:title" />
+        <meta content="My contact page" property="og:description" />
         <meta content="https://keiran.club" property="og:url" />
         <meta content="#0F0F0F" data-react-helmet="true" name="theme-color" />
        
@@ -25,7 +25,18 @@
             <a class="smalltext">I will repond fastest on discord</a>
             <a class="link">Steam: </a><a class="link" href="https://steamcommunity.com/id/keiran2/">keiran2</a>
             <a class="smalltext">My steam account.</a>
+            <a class="link">My current time: </a><a class="link" id="time"></a>
             </div>
         </div>
+        <script>
+            let time = document.getElementById("time");
+
+            setInterval(() =>{ 
+                let d = new Date();
+                let realTime = d.toLocaleString('en-GB', { timeZone: 'Europe/London' })
+                console.log(realTime.slice(realTime.indexOf(",")+1, realTime.length))
+                time.innerHTML = realTime.slice(realTime.indexOf(",")+1, realTime.length);
+            },1000)
+        </script>
     </body>
 </html> 
