@@ -36,7 +36,6 @@
             setInterval(() =>{ 
                 let d = new Date();
                 let realTime = d.toLocaleString('en-GB', { timeZone: 'Europe/London' })
-                console.log(realTime.slice(realTime.indexOf(",")+1, realTime.length))
                 time.innerHTML = realTime.slice(realTime.indexOf(",")+1, realTime.length);
             },1000)
         </script>
