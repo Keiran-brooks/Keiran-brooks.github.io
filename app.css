@@ -28,7 +28,7 @@ body{
     display: flex;
     font-size: x-large;
 }
-.smalltext{
+.inline{
     display: flex;
     font-size: x-large;
     display: inline;
