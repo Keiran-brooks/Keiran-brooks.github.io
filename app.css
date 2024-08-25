@@ -28,6 +28,11 @@ body{
     display: flex;
     font-size: x-large;
 }
+.smalltext{
+    display: flex;
+    font-size: x-large;
+    display: inline;
+}
 .link{
     font-size: x-large;
     
