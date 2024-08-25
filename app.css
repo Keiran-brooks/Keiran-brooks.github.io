@@ -28,11 +28,7 @@ body{
     display: flex;
     font-size: x-large;
 }
-.inline{
-    display: flex;
-    font-size: x-large;
-    display: inline;
-}
+
 .link{
     font-size: x-large;
     
