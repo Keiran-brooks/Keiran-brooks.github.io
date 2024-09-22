@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@325&display=swap');
 
-
 *{
     background-color: rgb(230, 230, 230);
     color: rgb(29, 29, 29);
@@ -8,18 +7,14 @@
     font-family: 'Roboto Mono', monospace;
     padding: 0;
 }
-
-
-
-
 body{
-    
     display: flex;
     justify-content: center;
+    margin: 0; /* Remove default margin */
 }
 
 .text{
-    margin-top: 80%;
+    margin-top: 30%;
     display: flex;
     justify-content: center;
     
@@ -30,12 +25,54 @@ body{
 }
 
 .link{
+    flex: 1;
     font-size: x-large;
     
-    justify-content: center;
+    align-items: center;
     size: 100%;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+} 
+
+.text__container {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
     
+}
+#changing {
+    transform: translateX(-24px);
+    position: absolute;
+    text-decoration: none;
+}
+#fade-text {
+    text-decoration: underline;
+}
+.linkHolder {
+    margin: 0 auto;
+
 }
 .nobr { white-space: nowrap }
 
+.navbar {
+    background-color: rgba(0, 0, 0, 0.4); /* Black background with 40% opacity */
+    padding: 15px; /* Padding for the navbar */
+}
 
+.navbar ul {
+    list-style: none; /* Remove default list styles */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Display items in a row */
+    justify-content: space-around; /* Distribute space evenly */
+}
+
+.navbar li {
+    display: inline; /* Display list items inline */
+}
+
+.navbar a {
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for links */
+}
