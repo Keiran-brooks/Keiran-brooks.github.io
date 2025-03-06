@@ -7,27 +7,31 @@
     font-family: 'Roboto Mono', monospace;
     padding: 0;
 }
-body{
+.main-body{
     display: flex;
     justify-content: center;
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 .text{
-    margin-top: 30%;
+    
     display: flex;
     justify-content: center;
     
 } 
+.dir {
+    display: flex;
+    justify-content: left;
+    font-size: medium;
+}
 .smalltext{
     display: flex;
     font-size: x-large;
 }
 
 .link{
-    flex: 1;
+
     font-size: x-large;
-    
     align-items: center;
     size: 100%;
     opacity: 1;
@@ -41,8 +45,9 @@ body{
     
 }
 #changing {
-    transform: translateX(-24px);
-    position: absolute;
+    display: flex;
+    
+    justify-content: center;
     text-decoration: none;
 }
 #fade-text {
